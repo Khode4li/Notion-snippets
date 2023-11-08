@@ -28,19 +28,19 @@ body{
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "Shanbe";
-    weekday[1] = "1 Shanbe";
-    weekday[2] = "2 Shanbe";
-    weekday[3] = "3 Shanbe";
-    weekday[4] = "4 Shanbe";
-    weekday[5] = "5 Shanbe";
-    weekday[6] = "JomE";
+    weekday[0] = "Shanbast";
+    weekday[1] = "1 Shanbast";
+    weekday[2] = "2 Shanbast";
+    weekday[3] = "3 Shanbast";
+    weekday[4] = "4 Shanbast";
+    weekday[5] = "5 Shanbast";
+    weekday[6] = "Jomast";
 
     
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
+    var date = dayOfWeek+" " + today.getFullYear() + "/" +(today.getMonth()+1) +'/'+ today.getDate();
 
     var greet;
 
@@ -52,6 +52,6 @@ body{
         greet = 'Asr Bekheyr ';
 
     document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> It's ${date}</div>`;
+        greet+=`<div id="date"> alan ${date}</div>`;
 </script> 
 </html>
