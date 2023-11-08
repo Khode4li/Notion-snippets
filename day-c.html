@@ -45,13 +45,13 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'Sobh bekheyr ';
+        greet = '<h3>Sobh bekheyr</h3> ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Zohr Bekheyr ';
+        greet = '<h3>Zohr Bekheyr</h3> ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Asr Bekheyr ';
+        greet = '<h3>Asr Bekheyr</h3> ';
 
     document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> alan ${date}</div>`;
+        greet+=`<div id="date"><b> alan ${date}</b></div>`;
 </script> 
 </html>
